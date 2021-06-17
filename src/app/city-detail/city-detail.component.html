@@ -1,0 +1,13 @@
+<div *ngIf="city">
+    <h2>{{city.name }} Details</h2>
+    <div>
+      <label for="city-name">City name: </label>
+      <input id="city-name" [(ngModel)]="city.name" placeholder="name">
+    </div>
+    <label for="city-name">Nickname: </label>
+    <input id="city-name" [(ngModel)]="city.description" placeholder="name"> 
+    <div>
+        <button (click)="goBack()">go back</button>
+    </div>
+    </div>
+    

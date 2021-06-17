@@ -1,0 +1,9 @@
+<h2>Cuisines to Try</h2>
+<ul class="cuisines">
+  <li *ngFor="let cuisine of cuisines">
+    <a routerLink="/food/{{cuisine.id}}">
+      <span class="badge">{{cuisine.id}}</span> {{cuisine.name}}
+    </a>
+  </li>
+</ul>
+

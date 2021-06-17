@@ -1,0 +1,13 @@
+<div *ngIf="cuisine">
+    <h2>{{cuisine.name }} Details</h2>
+    <div>
+      <label for="city-name">Cuisine name: </label>
+      <input id="city-name" [(ngModel)]="cuisine.name" placeholder="name">
+    </div>
+    <label for="city-name">Location: </label>
+    <input id="city-name" [(ngModel)]="cuisine.location" placeholder="name"> 
+    <div>
+        <button (click)="goBack()">go back</button>
+    </div>
+    </div>
+    
