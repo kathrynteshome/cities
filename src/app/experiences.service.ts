@@ -11,10 +11,10 @@ export class ExperiencesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getExperiences(): Observable<Experience[]> {
-    return this.httpClient.get<Experience[]>("https://www.boredapi.com/api/activity")
+  getExperiences(): Observable<Experience> {
+    return this.httpClient.get<Experience>("https://www.boredapi.com/api/activity")
     .pipe(
-        catchError(this.handleError<Experience[]>('getExperiences', []))
+        catchError(this.handleError<Experience>('getExperiences'))
       );
   }
 
@@ -24,8 +24,8 @@ export class ExperiencesService {
  * @param operation - name of the operation that failed
  * @param result - optional value to return as the observable result
  */
-private handleError<T>(operation = 'operation', result?: T) {
-  return (error: any): Observable<T> => {
+    private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
 
     // TODO: send the error to remote logging infrastructure
     console.error(error); // log to console instead
@@ -35,6 +35,6 @@ private handleError<T>(operation = 'operation', result?: T) {
 
     // Let the app keep running by returning an empty result.
     return error;
-  };
+    };
 }
 }
