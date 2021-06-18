@@ -1,0 +1,11 @@
+export interface Experience 
+{
+    activity: string;
+    type: string;
+    participants: number;
+    price: number;
+    link: string;
+    key: number;
+    accessibility: number;
+
+}

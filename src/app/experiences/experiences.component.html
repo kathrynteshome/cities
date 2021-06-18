@@ -1,1 +1,8 @@
-<p>experiences works!</p>
+<h2>Things To Do</h2>
+<ul class="cities">
+  <li *ngFor="let experience of experiences">
+    <a routerLink="experiences">
+      <span class="badge">{{experience.activity}}</span>
+    </a>
+  </li>
+</ul>

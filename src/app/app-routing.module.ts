@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CityDetailComponent } from './city-detail/city-detail.component';
 import { CuisinesComponent } from './cuisines/cuisines.component';
 import { CuisineDetailComponent } from './cuisine-detail/cuisine-detail.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'detail/:id', component: CityDetailComponent },
   { path: 'food', component: CuisinesComponent},
-  { path: 'food/:id', component: CuisineDetailComponent}
+  { path: 'food/:id', component: CuisineDetailComponent},
+  { path: 'experiences', component: ExperiencesComponent}
 ];
 
 @NgModule({
