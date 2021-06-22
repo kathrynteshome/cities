@@ -1,7 +1,9 @@
-<h2 id="choice1">Top Cities</h2>
+<h2>Top Cities</h2>
+<body>
 <div class="cities-menu">
     <a *ngFor="let city of cities"
     routerLink="/detail/{{city.id}}">
     {{city.name}}
   </a>
 </div>
+</body>

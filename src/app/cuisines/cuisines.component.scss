@@ -1,9 +1,13 @@
 /* HeroesComponent's private CSS styles */
+h2 {
+  padding:.5em;
+}
+
 .cuisines {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: 15em;
+    width: 40em;
   }
   .cuisines li {
     cursor: pointer;
@@ -11,8 +15,8 @@
     left: 0;
     background-color: #EEE;
     margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
+    padding: 10px;
+    height: 1.5em;
     border-radius: 4px;
   }
   .cuisines li:hover {
@@ -32,20 +36,20 @@
     background-color: black;
     color: white;
   }
-  .cuisines .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color:#405061;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
+  // .cuisines .badge {
+  //   display: inline-block;
+  //   font-size: small;
+  //   color: white;
+  //   padding: 0.8em 0.7em 0 0.7em;
+  //   background-color:#405061;
+  //   line-height: 1em;
+  //   position: relative;
+  //   left: -1px;
+  //   top: -4px;
+  //   height: 1.8em;
+  //   margin-right: .8em;
+  //   border-radius: 4px 0 0 4px;
+  // }
   
   input {
     padding: .5rem;

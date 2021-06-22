@@ -1,10 +1,11 @@
-
 <h2>Cities to Visit</h2>
+<body>
 <ul class="cities">
   <li *ngFor="let city of cities">
     <a routerLink="/detail/{{city.id}}">
-      <span class="badge">{{city.id}}</span> {{city.name}}
+      <span class="badge"></span> {{city.name}}
     </a>
   </li>
 </ul>
+</body>
 
