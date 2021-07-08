@@ -32,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [ExperiencesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
