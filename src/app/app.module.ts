@@ -10,9 +10,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CuisinesComponent } from './cuisines/cuisines.component';
 import { CuisineDetailComponent } from './cuisine-detail/cuisine-detail.component';
 import { ExperiencesComponent } from './experiences/experiences.component'; // <-- NgModel lives here
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HttpClient} from '@angular/common/http';
 import { ExperiencesService } from './experiences.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -26,13 +27,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ExperiencesComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    HttpClient,
+    RouterModule,
+    RouterModule.forRoot([
+      {path: '', component: DashboardComponent},
+      {path: 'dashboard', component: DashboardComponent}
+    ])
   ],
-  providers: [],
+  providers: [
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { CuisineService } from '../cuisine.service';
 import { Cuisine } from '../cuisine';
+import { RouterTestingModule } from '@angular/router/testing';
 
 @Component({
   selector: 'app-cuisine-detail',

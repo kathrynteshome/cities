@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { CityService } from '../city.service';
 import { City } from '../city';
 
+
 @Component({
   selector: 'app-city-detail',
   templateUrl: './city-detail.component.html',
